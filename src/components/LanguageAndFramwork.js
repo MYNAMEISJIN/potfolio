@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 const LanName = styled.h5`
 font-weight:600;
+height:48px;
 display:flex;
 align-items:center;
 `
@@ -24,12 +25,12 @@ min-width: 48px;
 
 const LanguageAndFramwork = () => {
     return (
-        <div>
+        <div style={{backgroundColor:"black"}}>
             <div>
                 <h2 style={{ borderBottom: "solid 1px white", paddingBottom: "20px", marginBottom: "20px", marginTop: "20px", fontWeight: "600" }}>Language / Framework</h2>
             </div>
             <Row className='lg-mb-3'>
-                <Col sm={6} md={3}>
+                <Col >
                     <LanName>
                         <BoxForLogo />
                         React.JS
@@ -39,7 +40,7 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
 
                 </Col>
-                <Col sm={6} md={3}>
+                <Col >
                     <LanName>
                         <BoxForLogo />
                         Javascript
@@ -49,7 +50,7 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
                 </Col>
 
-                <Col sm={6} md={3}>
+                <Col >
                     <LanName>
                         <BoxForLogo />
                         Node.JS
@@ -58,7 +59,7 @@ const LanguageAndFramwork = () => {
                         express, react.js, javascript
                     </LFDescription>
                 </Col>
-                <Col sm={6} md={3}>
+                <Col >
                     <LanName>
                         <BoxForLogo />
                         Bootstrap
@@ -69,7 +70,7 @@ const LanguageAndFramwork = () => {
                 </Col>
             </Row>
             <Row className='lg-mb-3'>
-                <Col sm={6} md={3}>
+                <Col >
                     <LanName>
                         <BoxForLogo />
                         Styled-components
@@ -79,7 +80,7 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
 
                 </Col>
-                <Col sm={6} md={3}>
+                <Col >
                     <LanName>
                         <BoxForLogo />
                         Express
@@ -89,10 +90,10 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
                 </Col >
 
-                <Col>
+                <Col className='d-none d-lg-block'>
                  
                 </Col>
-                <Col>
+                <Col className='d-none d-lg-block'>
                    
                 </Col>
             </Row>

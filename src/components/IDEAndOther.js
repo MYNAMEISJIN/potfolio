@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 const LanName = styled.h5`
 font-weight:600;
+height:48px;
 display:flex;
 align-items:center;
 `
@@ -25,12 +26,12 @@ min-width: 48px;
 
 const IDEAndOther = () => {
     return (
-        <div>
+        <div style={{backgroundColor:"black"}}>
             <div>
                 <h2 style={{ borderBottom: "solid 1px white", paddingBottom: "20px", marginBottom: "20px", marginTop: "20px", fontWeight: "600" }}>IDE / Others</h2>
             </div>
             <Row className='lg-mb-3'>
-                <Col sm={6} md={3}>
+                <Col>
                     <LanName>
                         <BoxForLogo />
                         Visual Studio Code
@@ -40,7 +41,7 @@ const IDEAndOther = () => {
                     </LFDescription>
 
                 </Col>
-                <Col sm={6} md={3}>
+                <Col >
                     <LanName>
                         <BoxForLogo />
                         Git
@@ -48,16 +49,18 @@ const IDEAndOther = () => {
                     <LFDescription>
                         github using
                     </LFDescription>
-                </Col>
+                </Col >
 
-                <Col>
+                <Col className='d-none d-lg-block'>
                    
                 </Col>
-                <Col >
+                <Col className='d-none d-lg-block'>
                     
                 </Col>
             </Row>
+        
            
+
         </div>
     )
 }

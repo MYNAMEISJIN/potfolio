@@ -12,7 +12,8 @@ import IDEAndOther from '../components/IDEAndOther'
 const ContainerForSkills = styled.div`
 background-color:black;
 color:white;
-height:100vh;
+min-height:100vh;
+max-height:100%;
 padding-top:70px;
 
 `

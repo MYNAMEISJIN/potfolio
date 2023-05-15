@@ -6,7 +6,7 @@ import { useSpring, animated } from '@react-spring/web'
 const HomeBottom = () => {
 
 
-    const starsOpacity3 = useSpring({
+    const starsOpacity3 = useSpring({ //for dust
         from: { opacity: 0 },
         to: { opacity: 1 },
         delay: 3000,

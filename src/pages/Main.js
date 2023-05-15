@@ -22,8 +22,8 @@ const SectionForAbout = styled.section`
 position: relative;
 z-index: 5;
  margin-top:100vh;
- height:100%;
-
+ min-height:100vh;
+max-height:100%;
 
 `
 const SectionForProject = styled.section`
@@ -34,7 +34,8 @@ const SectionForSkill = styled.section`
  position: sticky;
   bottom: 0;
   width:100%;
-  height:100%;
+  height:100vh;
+
   z-index: 1;
 `
 

@@ -8,7 +8,8 @@ import styled from 'styled-components'
 const ContainerForAbout = styled.div`
 background-color:white;
 color:black;
-height:100vh;
+min-height:100vh;
+max-height:100%;
 border-radius: 20px 20px 0px 0px;
 display:flex;
 justify-content:center;
