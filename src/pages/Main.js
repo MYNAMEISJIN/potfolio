@@ -22,6 +22,7 @@ const SectionForAbout = styled.section`
 position: relative;
 z-index: 5;
  margin-top:100vh;
+ height:100%;
 
 
 `
@@ -33,6 +34,7 @@ const SectionForSkill = styled.section`
  position: sticky;
   bottom: 0;
   width:100%;
+  height:100%;
   z-index: 1;
 `
 

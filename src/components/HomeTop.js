@@ -129,7 +129,7 @@ const HomeTop = () => {
 
 
 
-                <Col style={{ display: 'flex', justifyContent: "center" }}>
+                <Col style={{ display: 'flex', justifyContent: "center"}}>
 
 
                     <animated.div

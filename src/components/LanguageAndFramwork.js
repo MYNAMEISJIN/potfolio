@@ -29,7 +29,7 @@ const LanguageAndFramwork = () => {
                 <h2 style={{ borderBottom: "solid 1px white", paddingBottom: "20px", marginBottom: "20px", marginTop: "20px", fontWeight: "600" }}>Language / Framework</h2>
             </div>
             <Row className='lg-mb-3'>
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         React.JS
@@ -39,7 +39,7 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
 
                 </Col>
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         Javascript
@@ -49,7 +49,7 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
                 </Col>
 
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         Node.JS
@@ -58,7 +58,7 @@ const LanguageAndFramwork = () => {
                         express, react.js, javascript
                     </LFDescription>
                 </Col>
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         Bootstrap
@@ -69,7 +69,7 @@ const LanguageAndFramwork = () => {
                 </Col>
             </Row>
             <Row className='lg-mb-3'>
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         Styled-components
@@ -79,7 +79,7 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
 
                 </Col>
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         Express
@@ -87,7 +87,7 @@ const LanguageAndFramwork = () => {
                     <LFDescription>
                         backend API development
                     </LFDescription>
-                </Col>
+                </Col >
 
                 <Col>
                  

@@ -90,7 +90,7 @@ const NavigationBar = () => {
     <ContainerForNav>
 
       <InitialH href="#home" onClick={scrollToTop}>
-        S.J
+        SJ
       </InitialH>
       <Taps>
 

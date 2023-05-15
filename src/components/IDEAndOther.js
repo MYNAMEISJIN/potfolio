@@ -30,7 +30,7 @@ const IDEAndOther = () => {
                 <h2 style={{ borderBottom: "solid 1px white", paddingBottom: "20px", marginBottom: "20px", marginTop: "20px", fontWeight: "600" }}>IDE / Others</h2>
             </div>
             <Row className='lg-mb-3'>
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         Visual Studio Code
@@ -40,7 +40,7 @@ const IDEAndOther = () => {
                     </LFDescription>
 
                 </Col>
-                <Col>
+                <Col sm={6} md={3}>
                     <LanName>
                         <BoxForLogo />
                         Git
@@ -53,7 +53,7 @@ const IDEAndOther = () => {
                 <Col>
                    
                 </Col>
-                <Col>
+                <Col >
                     
                 </Col>
             </Row>

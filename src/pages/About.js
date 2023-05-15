@@ -30,12 +30,27 @@ const ContactArea = styled.div`
 display:flex;
 justify-content:space-around;
 margin-top: 50px;
+@media screen and (max-width: 992px) {
+  display:block;
+}
+
 `
 const ContactsHeader = styled.div`
 height: "30px";
 display:flex;
 justify-content:center;
 font-weight:600;
+
+`
+
+const ContactFooter = styled.div`
+margin-top: 10px;
+@media screen and (max-width: 992px) {
+  display:flex;
+  justify-content:center;
+  margin-top:5px;
+  margin-bottom:25px;
+}
 `
 
 
@@ -51,7 +66,7 @@ const About = () => {
       <Container>
 
         <FirstWriting>
-          
+
 
           <div>
             Hi
@@ -76,32 +91,32 @@ const About = () => {
         <ContactArea>
           <div>
             <ContactsHeader>
-              <img src='images/email.png' style={{ width: "25px", marginBottom: "10px" }} /> &nbsp;
+              <img src='images/email.png' style={{ width: "25px",}} /> &nbsp;
               Email
             </ContactsHeader>
-            <div>
+            <ContactFooter>
               seongjin@gmail.com
-            </div>
+            </ContactFooter>
 
           </div>
 
           <div>
             <ContactsHeader>
-              <img src='images/linkedin.png' style={{ width: "25px", marginBottom: "10px" }} /> &nbsp;
+              <img src='images/linkedin.png' style={{ width: "25px", }} /> &nbsp;
               LinkedIn
             </ContactsHeader>
-            <div>
+            <ContactFooter>
               this is for my LinkedIn address
-            </div>
+            </ContactFooter>
           </div>
           <div>
             <ContactsHeader>
-              <img src='images/github.png' style={{ width: "25px", marginBottom: "10px" }} /> &nbsp;
+              <img src='images/github.png' style={{ width: "25px", }} /> &nbsp;
               GitHub
             </ContactsHeader>
-            <div>
+            <ContactFooter>
               this is for my github address
-            </div>
+            </ContactFooter>
 
           </div>
         </ContactArea>
