@@ -3,7 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 import LanguageAndFramwork from '../components/LanguageAndFramwork'
 import IDEAndOther from '../components/IDEAndOther'
-
+import {
+  Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn,
+  MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut
+} from "react-scroll-motion";
 
 
 
@@ -21,12 +24,13 @@ padding-top:70px;
 
 const Skill = () => {
 
-  
+
 
 
   return (
     <ContainerForSkills>
       <Container>
+
         <h1 style={{ fontWeight: "600" }}>Skills</h1>
         <Container>
           <LanguageAndFramwork />
@@ -35,14 +39,20 @@ const Skill = () => {
 
           <IDEAndOther />
 
-          
 
+
+
+          <div style={{textAlign:"center"}}>
+              <Animator animation={batch(MoveIn(-1000,0))}>
+                call me ;)
+              </Animator>
+          </div>
         </Container>
 
 
 
-      </Container>
-    </ContainerForSkills>
+      </Container >
+    </ContainerForSkills >
   )
 }
 

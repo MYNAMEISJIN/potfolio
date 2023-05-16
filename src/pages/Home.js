@@ -1,17 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Col, Row } from 'react-bootstrap'
 import HomeTop from '../components/HomeTop'
 import HomeMiddle from '../components/HomeMiddle'
 import HomeBottom from '../components/HomeBottom'
 import { useSpring, animated } from '@react-spring/web'
 import { TypeAnimation } from 'react-type-animation';
-import { useState } from 'react'
+
 import MobileHomeTop from '../components/MobileHomeTop'
 import MobileHomeMiddle from '../components/MobileHomeMiddle'
 import MobileHomeBottom from '../components/MobileHomeBottom'
 import MobileHomeBottom2 from '../components/MobileHomeBottom2'
-import { faLeftLong } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const MumContainer = styled.div`
@@ -41,12 +40,20 @@ padding-top:-100px;
 }
 `
 
+// const DivforTypingAniInDesktop = styled.div`
+// @media screen and (max-width: 992px) {
+// display:none;
+// }
+// `
+// const DivforTypingAniInMobile = styled.div`
+// @media screen and (min-width: 993px) {
+// display:none;
+// }
+// `
+
 
 
 const Home = () => {
-
-    const [firstLine, setFirstLine] = useState(true)
-    const [secondLine, setSecondLine] = useState(true)
 
     const typingAppear = useSpring({
         from: { opacity: 0 },
@@ -81,60 +88,33 @@ const Home = () => {
                         paddingRight: "100px",
                     }}
                 >
-                    <div className='hey-mate2'>
+                    
                         <div>
                             <TypeAnimation 
                                 sequence={[
 
                                     8400,
                                     'The cosmos is within us',
+                                    
+                                    500, // Types 'Three' without deleting 'Two'
+                                    'The cosmos is within us\nWe are made of star-stuff',
                                     500,
+                                    "The cosmos is within us\nWe are made of star-stuff\nWe are a way for the universe to know itself.",
                                     
                                     () => {
 
-                                        setFirstLine(false) // Place optional callbacks anywhere in the array
+                                        
 
                                     }
                                 ]}
                                 wrapper="span"
-                                cursor={false}
+                                cursor={true}
 
-                                style={{ fontSize: '2.3em', display: 'inline-block', color: "white", width: "745px" }}
+                                style={{ fontSize: '2.3em', display: 'inline-block', color: "white", width: "770px",whiteSpace: 'pre-line' }}
                             />
                         </div>
-                        {firstLine ? <div></div> : <div>
-                            <TypeAnimation
-                                sequence={[
-                                 
-                                    'We are made of star-stuff',
-                                    500,// Types 'Three' without deleting 'Two'
-                                    () => {
-                                        setSecondLine(false)
-                                    }
-                                ]}
-                                wrapper="span"
-                                cursor={false}
-
-                                style={{ fontSize: '2.3em', display: 'inline-block', color: "white" }}
-                            />
-                        </div>}
-                        {secondLine ? <div></div> : <div>
-                            <TypeAnimation
-                                sequence={[
-
-                                    "We are a way for the universe to know itself",
-                                    500, // Types 'Three' without deleting 'Two'
-                                    () => {
-
-                                    }
-                                ]}
-                                wrapper="span"
-                                cursor={false}
-
-                                style={{ fontSize: '2.3em', display: 'inline-block', color: "white" }}
-                            />
-                        </div>}
-                    </div>
+                        
+                   
                 </animated.div>
 
 
@@ -160,59 +140,29 @@ const Home = () => {
                         
                     }}
                 >
-                    <div className='hey-mate'>
                         <div>
                             <TypeAnimation
+                          
                                 sequence={[
 
                                     7600,
                                     'The cosmos is within us',
+                                    
                                     500, // Types 'Three' without deleting 'Two'
+                                    'The cosmos is within us\nWe are made of star-stuff',
+                                    500,
+                                    "The cosmos is within us\nWe are made of star-stuff\nWe are a way for the universe to know itself.",
                                     () => {
-
-                                        setFirstLine(false) // Place optional callbacks anywhere in the array
 
                                     }
                                 ]}
                                 wrapper="span"
-                                cursor={false}
+                                cursor={true}
 
-                                style={{ fontSize: '20px', display: 'inline-block', color: "white", width:"340px" }}
+                                style={{ fontSize: '20px', display: 'inline-block', color: "white", width:"340px", whiteSpace: 'pre-line' }}
                             />
                         </div>
-                        {firstLine ? <div></div> : <div>
-                            <TypeAnimation
-                                sequence={[
-
-                                    'We are made of star-stuff',
-                                    500,// Types 'Three' without deleting 'Two'
-                                    () => {
-                                        setSecondLine(false)
-                                    }
-                                ]}
-                                wrapper="span"
-                                cursor={false}
-
-                                style={{ fontSize: '20px', display: 'inline-block', color: "white" }}
-                            />
-                        </div>}
-                        {secondLine ? <div></div> : <div>
-                            <TypeAnimation
-                                sequence={[
-
-                                    "We are a way for the universe to know itself",
-                                    500, // Types 'Three' without deleting 'Two'
-                                    () => {
-
-                                    }
-                                ]}
-                                wrapper="span"
-                                cursor={false}
-
-                                style={{ fontSize: '20px', display: 'inline-block', color: "white" }}
-                            />
-                        </div>}
-                    </div>
+                       
 
                 </animated.div>
             </MobileMumContainer>

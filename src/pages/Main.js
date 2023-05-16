@@ -4,7 +4,10 @@ import Home from './Home'
 import About from './About'
 import Project from './Project'
 import Skill from './Skill'
-
+import {
+  Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn,
+  MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut
+} from "react-scroll-motion";
 
 
 
@@ -41,29 +44,39 @@ const SectionForSkill = styled.section`
 
 const Main = () => {
 
-  
 
-  
-  
+
+
+
   return (
     <div>
-      
-      <SectionForHome id='home'>
-    
-        <Home />
-      </SectionForHome>
+      <ScrollContainer>
 
-      <SectionForAbout id='about'>
-        <About />
-      </SectionForAbout>
+        <SectionForHome id='home'>
 
-      <SectionForProject id='project'>
-        <Project />
-      </SectionForProject>
+          <Home />
+        </SectionForHome>
 
-      <SectionForSkill id='skill'>
-        <Skill />
-      </SectionForSkill>
+        <SectionForAbout id='about'>
+          <About />
+        </SectionForAbout>
+
+        <SectionForProject id='project'>
+          <Project />
+        </SectionForProject>
+
+        <SectionForSkill id='skill'>
+
+          <Skill />
+        </SectionForSkill>
+
+      </ScrollContainer>
+
+
+
+
+
+
     </div>
   )
 }

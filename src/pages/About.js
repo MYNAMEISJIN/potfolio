@@ -3,7 +3,9 @@ import { Container } from 'react-bootstrap'
 import styled from 'styled-components'
 
 
-
+const ClickableComponent = styled.div`
+  cursor: pointer;
+`;
 
 const ContainerForAbout = styled.div`
 background-color:white;
@@ -44,8 +46,13 @@ font-weight:600;
 
 `
 
-const ContactFooter = styled.div`
+const ContactFooter = styled.a`
 margin-top: 10px;
+text-decoration:none;
+color:black;
+&:hover{
+  color:grey;
+}
 @media screen and (max-width: 992px) {
   display:flex;
   justify-content:center;
@@ -83,7 +90,7 @@ const About = () => {
 
           My primary focus is on React.js, which enables me to create dynamic and responsive user interfaces, providing consistent experiences across devices.
 
-          Additionally, I have a strong background in node.js and Next.js, which allows me develop scalable, high-performance applications.
+          Additionally, I have a strong background in node.js express, which allows me develop API.
 
           Whether you're a startup or an established enterprise, I'm devoted to delivering innovative solutions that meet your unique needs.  let's collaborate and bring your vision to life!
         </SecondWriting>
@@ -96,7 +103,7 @@ const About = () => {
               Email
             </ContactsHeader>
             <ContactFooter>
-              seongjin@gmail.com
+              hbay11@naver.com
             </ContactFooter>
 
           </div>
@@ -106,8 +113,9 @@ const About = () => {
               <img src='images/linkedin.png' style={{ width: "25px", }} /> &nbsp;
               LinkedIn
             </ContactsHeader>
-            <ContactFooter>
-              this is for my LinkedIn address
+            <ContactFooter href="http://www.linkedin.com/in/seongjin-park-580aa6261" target="_blank" rel="noopener noreferrer">
+            www.linkedin.com/in/seongjin-park-580aa6261
+
             </ContactFooter>
           </div>
           <div>
@@ -115,8 +123,8 @@ const About = () => {
               <img src='images/github.png' style={{ width: "25px", }} /> &nbsp;
               GitHub
             </ContactsHeader>
-            <ContactFooter>
-              this is for my github address
+            <ContactFooter href="https://github.com/MYNAMEISJIN" target="_blank" rel="noopener noreferrer">
+           www.github.com/MYNAMEISJIN
             </ContactFooter>
 
           </div>

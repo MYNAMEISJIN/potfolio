@@ -157,25 +157,25 @@ const NavigationBar = () => {
 
 
       </Taps>
-      <LanguageArea>
+      {/* <LanguageArea>
         <div>
-          Language
+          
         </div>
 
-      </LanguageArea>
+      </LanguageArea> */}
       <MobileMenu>
         <Dropdown>
           <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
           MENU
           </Dropdown.Toggle>
 
-          <Dropdown.Menu as={CustomMenu} style={{backgroundColor:"black", a:{color:"black"}}}>
+          <Dropdown.Menu as={CustomMenu} style={{backgroundColor:"black"}}>
             <Dropdown.Item eventKey="1" onClick={scrollToTop}>HOME</Dropdown.Item>
             <Dropdown.Item eventKey="2" href="#about">ABOUT</Dropdown.Item>
             <Dropdown.Item eventKey="3" href="#project">
               PROJECT
             </Dropdown.Item>
-            <Dropdown.Item eventKey="4" href="#skill">SKILL</Dropdown.Item>
+            <Dropdown.Item eventKey="4" onClick={scrollToBottom}>SKILL</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </MobileMenu>
