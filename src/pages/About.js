@@ -113,8 +113,8 @@ const About = () => {
               <img src='images/linkedin.png' style={{ width: "25px", }} /> &nbsp;
               LinkedIn
             </ContactsHeader>
-            <ContactFooter href="http://www.linkedin.com/in/seongjin-park-580aa6261" target="_blank" rel="noopener noreferrer">
-            www.linkedin.com/in/seongjin-park-580aa6261
+            <ContactFooter href="http://www.linkedin.com/in/seongjiny-park" target="_blank" rel="noopener noreferrer">
+            http://www.linkedin.com/in/seongjiny-park
 
             </ContactFooter>
           </div>
