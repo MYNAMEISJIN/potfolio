@@ -3,11 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 import LanguageAndFramwork from '../components/LanguageAndFramwork'
 import IDEAndOther from '../components/IDEAndOther'
-import {
-  Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn,
-  MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut
-} from "react-scroll-motion";
-
+import { Animator, batch, MoveIn, } from "react-scroll-motion";
 
 
 
@@ -40,12 +36,11 @@ const Skill = () => {
           <IDEAndOther />
 
 
-
-
-          <div style={{textAlign:"center"}}>
-              <Animator animation={batch(MoveIn(-1000,0))}>
-                call me ;)
-              </Animator>
+          
+          <div style={{ textAlign: "center" }}>
+            <Animator animation={batch(MoveIn(-1000, 0))}>
+              call me ;)
+            </Animator>
           </div>
         </Container>
 

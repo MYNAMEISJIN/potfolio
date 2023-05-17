@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
-
-
+import { SiVisualstudiocode } from "react-icons/si";
+import { BsGit } from "react-icons/bs";
 
 const LanName = styled.h5`
 font-weight:600;
@@ -13,7 +13,6 @@ align-items:center;
 const BoxForLogo = styled.div`
 width:30px;
 height:30px;
-background-color:white;
 margin-right:10px;
 `
 
@@ -33,7 +32,9 @@ const IDEAndOther = () => {
             <Row className='lg-mb-3'>
                 <Col>
                     <LanName>
-                        <BoxForLogo />
+                        <BoxForLogo >
+                            <SiVisualstudiocode style={{width:"90%",height:"90%"}}/>
+                        </BoxForLogo>
                         Visual Studio Code
                     </LanName>
                     <LFDescription>
@@ -43,7 +44,9 @@ const IDEAndOther = () => {
                 </Col>
                 <Col >
                     <LanName>
-                        <BoxForLogo />
+                        <BoxForLogo >
+                            <BsGit style={{width:"90%",height:"90%"}}/>
+                        </BoxForLogo>
                         Git
                     </LanName>
                     <LFDescription>

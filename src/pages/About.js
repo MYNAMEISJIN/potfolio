@@ -130,9 +130,6 @@ const About = () => {
           </div>
         </ContactArea>
 
-
-
-
       </Container>
     </ContainerForAbout>
   )
