@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
+import styled, { keyframes } from 'styled-components'
 
 
 const ClickableComponent = styled.div`
@@ -60,8 +60,41 @@ color:black;
   margin-bottom:25px;
 }
 `
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
 
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
+// Here we create a component that will rotate everything we pass in over two seconds
+const Rotate = styled.div`
+  display: inline-block;
+  animation: ${rotate} 5s linear infinite;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+  @media screen and (max-width: 992px) {
+  display:none;
+}
+  
+`;
+const RotateForWriting = styled.div`
+  display: none;
+  margin-top: 5px;
+  margin-left: 10px;
+  
+  @media screen and (max-width: 992px) {
+    display: flex;
+    align-items:center;
+    animation: ${rotate} 5s linear infinite;
+  
+  
+}
+  
+`;
 
 const About = () => {
 
@@ -73,33 +106,53 @@ const About = () => {
 
       <Container>
 
-        <FirstWriting>
+
+        <Row>
+          <Col>
+            <FirstWriting>
 
 
-          <div>
-            Hi
-          </div>
-          <div>
-            I'm Seongjin Park, JS web developer
-          </div>
-        </FirstWriting>
+              <div style={{display:"flex"}}>
+                <div>
+                  Hi
+                </div>
+                <RotateForWriting>
+                  <img src='images/logo512.png' style={{ width: "30px", height:"30px" }} />
+                </RotateForWriting>
+              </div>
+              <div>
+                I'm Seongjin Park, JS web developer
+              </div>
+            </FirstWriting>
 
 
-        <SecondWriting>
-          with a passion for creating exceptional user experiences through my expertise in front-end development. As an growing expert in Applied Software Engineering, I'm dedicated to delivering world-class solutions to clients worldwide.
+            <SecondWriting>
+              with a passion for creating exceptional user experiences through my expertise in front-end development. As an growing expert in Applied Software Engineering, I'm dedicated to delivering world-class solutions to clients worldwide.
 
-          My primary focus is on React.js, which enables me to create dynamic and responsive user interfaces, providing consistent experiences across devices.
+              My primary focus is on React.js, which enables me to create dynamic and responsive user interfaces, providing consistent experiences across devices.
 
-          Additionally, I have a strong background in node.js express, which allows me develop API.
+              Additionally, I have a strong background in node.js express, which allows me develop API.
 
-          Whether you're a startup or an established enterprise, I'm devoted to delivering innovative solutions that meet your unique needs.  let's collaborate and bring your vision to life!
-        </SecondWriting>
+              Whether you're a startup or an established enterprise, I'm devoted to delivering innovative solutions that meet your unique needs.  let's collaborate and bring your vision to life!
+            </SecondWriting>
+          </Col>
+
+          <Col lg={3}>
+            <Rotate>
+              <img src='images/logo512.png' style={{ width: "230px" }} />
+            </Rotate>
+          </Col>
+
+
+        </Row>
+
+
 
 
         <ContactArea>
           <div>
             <ContactsHeader>
-              <img src='images/email.png' style={{ width: "25px",}} /> &nbsp;
+              <img src='images/email.png' style={{ width: "25px", }} /> &nbsp;
               Email
             </ContactsHeader>
             <ContactFooter>
@@ -114,7 +167,7 @@ const About = () => {
               LinkedIn
             </ContactsHeader>
             <ContactFooter href="http://www.linkedin.com/in/seongjiny-park" target="_blank" rel="noopener noreferrer">
-            http://www.linkedin.com/in/seongjiny-park
+              http://www.linkedin.com/in/seongjiny-park
 
             </ContactFooter>
           </div>
@@ -124,7 +177,7 @@ const About = () => {
               GitHub
             </ContactsHeader>
             <ContactFooter href="https://github.com/MYNAMEISJIN" target="_blank" rel="noopener noreferrer">
-           www.github.com/MYNAMEISJIN
+              www.github.com/MYNAMEISJIN
             </ContactFooter>
 
           </div>

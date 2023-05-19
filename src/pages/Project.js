@@ -4,7 +4,10 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Container, Card, Button } from 'react-bootstrap';
 
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+
+
+
+
 
 const ContainerForProject = styled.div`
 background-color:white;
@@ -117,24 +120,7 @@ const Project = () => {
                     </ProjectDiv>
                 </Carousel>
 
-                {/* <ScrollContainer>
-                    <ScrollPage>
-                        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-                            <span style={{ fontSize: "30px" }}>Let me show you scroll animation 😀</span>
-                        </Animator>
-                    </ScrollPage>
-                    <ScrollPage>
-                        <Animator animation={ZoomInScrollOut}>
-                            <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span>
-                        </Animator>
-                    </ScrollPage>
-                    <ScrollPage>
-                        <Animator animation={FadeUp}>
-                            <span style={{ fontSize: "40px" }}>I'm FadeUp ⛅️</span>
-                        </Animator>
-                    </ScrollPage>
                 
-                </ScrollContainer> */}
 
 
             </Container>

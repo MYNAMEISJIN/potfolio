@@ -7,7 +7,6 @@ import { Animator, batch, MoveIn, } from "react-scroll-motion";
 
 
 
-
 const ContainerForSkills = styled.div`
 background-color:black;
 color:white;
@@ -36,15 +35,12 @@ const Skill = () => {
           <IDEAndOther />
 
 
-          
           <div style={{ textAlign: "center" }}>
             <Animator animation={batch(MoveIn(-1000, 0))}>
               call me ;)
             </Animator>
           </div>
         </Container>
-
-
 
       </Container >
     </ContainerForSkills >

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { SiVisualstudiocode } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
+
 const LanName = styled.h5`
 font-weight:600;
 height:48px;
@@ -61,9 +62,7 @@ const IDEAndOther = () => {
                     
                 </Col>
             </Row>
-        
-           
-
+       
         </div>
     )
 }

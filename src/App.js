@@ -7,6 +7,7 @@ import Project from './pages/Project';
 import Skill from './pages/Skill';
 import NavigationBar from './components/NavigationBar';
 import Main from './pages/Main';
+import "animate.css/animate.min.css";
 
 
 function App() {

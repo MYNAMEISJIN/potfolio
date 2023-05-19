@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 import { FaReact, } from 'react-icons/fa';
-import { SiStyledcomponents, SiJavascript, SiNodedotjs,SiBootstrap } from "react-icons/si";
+import { SiStyledcomponents, SiJavascript, SiNodedotjs, SiBootstrap,SiTypescript } from "react-icons/si";
 
 
 const LanName = styled.h5`
@@ -33,7 +33,7 @@ const LanguageAndFramwork = () => {
                 <Col >
                     <LanName>
                         <BoxForLogo>
-                            <FaReact style={{width:"100%",height:"100%"}}/>
+                            <FaReact style={{ width: "100%", height: "100%" }} />
                         </BoxForLogo>
                         React.JS
                     </LanName>
@@ -45,7 +45,7 @@ const LanguageAndFramwork = () => {
                 <Col >
                     <LanName>
                         <BoxForLogo>
-                            <SiJavascript style={{width:"100%",height:"100%"}}/>
+                            <SiJavascript style={{ width: "100%", height: "100%" }} />
                         </BoxForLogo>
                         Javascript
                     </LanName>
@@ -57,23 +57,23 @@ const LanguageAndFramwork = () => {
                 <Col >
                     <LanName>
                         <BoxForLogo>
-                            <SiNodedotjs style={{width:"100%",height:"100%"}} />
+                            <SiTypescript style={{ width: "100%", height: "100%" }} />
                         </BoxForLogo>
-                        Node.JS
+                        Typescript
                     </LanName>
                     <LFDescription>
-                        express, react.js, javascript
+                        giving types to javascript
                     </LFDescription>
                 </Col>
                 <Col >
                     <LanName>
                         <BoxForLogo>
-                            <SiBootstrap style={{width:"100%",height:"100%"}}/>
+                            <SiNodedotjs style={{ width: "100%", height: "100%" }} />
                         </BoxForLogo>
-                        Bootstrap
+                        Node.JS
                     </LanName>
                     <LFDescription>
-                        interactive web-app
+                        making API with express
                     </LFDescription>
                 </Col>
             </Row>
@@ -81,7 +81,18 @@ const LanguageAndFramwork = () => {
                 <Col >
                     <LanName>
                         <BoxForLogo>
-                            <SiStyledcomponents style={{width:"100%",height:"100%"}}/>
+                            <SiBootstrap style={{ width: "100%", height: "100%" }} />
+                        </BoxForLogo>
+                        Bootstrap
+                    </LanName>
+                    <LFDescription>
+                        interactive web-app
+                    </LFDescription>
+                </Col>
+                <Col >
+                    <LanName>
+                        <BoxForLogo>
+                            <SiStyledcomponents style={{ width: "100%", height: "100%" }} />
                         </BoxForLogo>
                         Styled-components
                     </LanName>
@@ -90,9 +101,6 @@ const LanguageAndFramwork = () => {
                     </LFDescription>
 
                 </Col>
-                <Col >
-                    
-                </Col >
 
                 <Col className='d-none d-lg-block'>
 
