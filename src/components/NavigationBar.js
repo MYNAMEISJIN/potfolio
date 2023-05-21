@@ -21,19 +21,11 @@ width:100%;
 
 
 `
-const LanguageArea = styled.div`
-display:flex;
-justify-content: flex-end;
-align-items: center;
-width:100%;
-@media screen and (max-width: 992px) {
-  display: none;
-}
-`
 
 const Taps = styled.div`
 display:flex;
 align-items: center;
+padding-left:45%;
 
  & a{
     padding:8px 8px 0px 8px;
